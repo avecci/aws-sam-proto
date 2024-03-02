@@ -21,7 +21,7 @@ jobs:
           role-to-assume: ${{ secrets.oidc_arn }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ vars.AWS_REGION }}
-          role-duration-seconds: 180
+          role-duration-seconds: 900
       # sam build 
       - run: sam build --use-container
 
